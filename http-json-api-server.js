@@ -16,9 +16,9 @@ function unixTime(time) {
 }
 
 http.createServer(function (req, res) {
-	var parsedURL = url.parse(req.url, true)
-	var time = new Date(parsedURL.query.iso)
-	var result
+	let parsedURL = url.parse(req.url, true)
+	let time = new Date(parsedURL.query.iso)
+	let result
 
 	if (/^\/api\/parsetime/.test(req.url))
 		result = parseTime(time)

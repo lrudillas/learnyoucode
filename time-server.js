@@ -5,7 +5,7 @@ function addZero(i) {
 }
 
 function today() {
-	var d = new Date()
+	let d = new Date()
 	return d.getFullYear() + '-'
 		+ addZero(d.getMonth() + 1) + '-'
 		+ addZero(d.getDate()) + ' '
